@@ -87,7 +87,7 @@ const Products = () => {
                       <p>Discount: {item.discountPercentage}%</p>
                   </Link>
                   <button className="buttons">
-              <Link to="/newproduct">See more</Link>
+              <Link to="/about">See more</Link>
           </button>
 
 

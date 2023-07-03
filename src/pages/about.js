@@ -29,7 +29,7 @@ const Products = () => {
   }
 
   return (
-    <div>
+    <div  className="products2">
       {products.map((item) => (
         <div key={item.id}>
           <Link to={`/products/${item.id}`}>
