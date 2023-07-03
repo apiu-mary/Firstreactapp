@@ -86,13 +86,16 @@ const Products = () => {
                       <p>Price: ${item.price}</p>
                       <p>Discount: {item.discountPercentage}%</p>
                   </Link>
+                  <button className="buttons">
+              <Link to="/newproduct">See more</Link>
+          </button>
 
 
               </div>
           ))}
       </div>
       <button className="button">
-              <Link to="/newpriduct">Add Product</Link>
+              <Link to="/newproduct">Add Product</Link>
           </button></>
     
     

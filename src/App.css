@@ -187,3 +187,26 @@ grid-template-columns: repeat(2fr,2);
   border-radius: 5px;
   cursor: pointer;
 }
+.form{
+  border: solid rgb(196, 188, 188);
+  margin: 0 auto;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+.form input{
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  width: 80%;
+  border: solid pink;
+  border-radius: 5px;
+}
+.form>button{
+  background-color: gray;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 6px 16px;
+  font-size: 10px;
+  margin-top: 20px;
+}

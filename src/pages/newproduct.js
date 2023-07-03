@@ -18,8 +18,9 @@ const NewProductPage = () => {
 
   return (
     <div>
+        
       <h1>New Product</h1>
-      <form onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit}>
         <div>
           <label>Title:</label>
           <input
