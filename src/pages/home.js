@@ -47,6 +47,7 @@
 // export default Products
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+ 
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -75,23 +76,24 @@ const Products = () => {
   }
 
   return (
-    <div>
-      {products.map((item) => (
-        <div key={item.id}>
-          <Link to={`/products/${item.id}`}>
-            <h2>{item.brand}</h2>
-            <h3>{item.title}</h3>
-            <img src={item.thumbnail} alt={item.title} />
-            <p>Price: ${item.price}</p>
-            <p>Discount: {item.discountPercentage}%</p>
-          </Link>
-          <button>
-  <Link to="/add-product">Add Product</Link>
-</button>
+    <><div className="productss">
+          {products.map((item) => (
+              <div key={item.id}>
+                  <Link to={`/products/${item.id}`}>
+                      <h2>{item.brand}</h2>
+                      <h3>{item.title}</h3>
+                      <img src={item.thumbnail} alt={item.title} />
+                      <p>Price: ${item.price}</p>
+                      <p>Discount: {item.discountPercentage}%</p>
+                  </Link>
 
-        </div>
-      ))}
-    </div>
+
+              </div>
+          ))}
+      </div>
+      <button className="button">
+              <Link to="/newpriduct">Add Product</Link>
+          </button></>
     
     
   );

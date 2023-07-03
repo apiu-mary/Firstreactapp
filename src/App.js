@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
 import About from './pages/about';
 import Profile from './pages/profile';
-
+import NewProductPage from './pages/newproduct';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
     <Route path='/home'Component={Home}exact/>
     <Route path='/about'Component={About}/>
     <Route path='/profile'Component={Profile}/>
+    <Route path='/newproduct' Component={NewProductPage}/>
     </Routes>
 
     </switch>

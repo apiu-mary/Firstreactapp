@@ -13,6 +13,9 @@ const Header=()=>{
                 </li>
                 <li>
                     < Link to="/profile">Login</Link>
+                    <li>
+                    < Link to="/newproduct">Newproduct</Link>
+                </li>
                 </li>
               </ul>
         </div>
